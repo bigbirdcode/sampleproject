@@ -1,3 +1,5 @@
+"""Unit level test of functions of component C"""
+
 # pragma pylint: disable=missing-docstring,redefined-outer-name
 
 import pytest
@@ -7,6 +9,7 @@ from mysw.c import C
 
 @pytest.fixture
 def c():
+    """Fixture will return a component C for the tests"""
     return C()
 
 

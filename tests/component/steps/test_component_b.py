@@ -1,6 +1,6 @@
-# pragma pylint: disable=missing-docstring,redefined-outer-name
+"""Component level tests of component B"""
 
-"""Component B tests."""
+# pragma pylint: disable=missing-docstring,redefined-outer-name
 
 from ast import literal_eval
 from pytest_bdd import scenarios, given, when, then, parsers
@@ -13,6 +13,8 @@ scenarios('../features/component_b.feature')
 
 @given('new instance of component B')
 def component_b():
+    """Given steps works as fixture, it will return a component B
+    for the tests"""
     return B()
 
 
